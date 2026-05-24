@@ -1,0 +1,47 @@
+.d-flex{
+    display: flex;
+}
+
+body{
+    background-color: #E0B4FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page1 img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#page1 {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page1 h2{
+
+    margin-top: 1.5em;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#page1 h1{
+    margin-top: .5em;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#page2{
+    display: grid;
+}
