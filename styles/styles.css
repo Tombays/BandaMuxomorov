@@ -43,5 +43,47 @@ body{
 }
 
 #page2{
+    height: 100vh;
     display: grid;
+    grid-template-areas: 
+    "p2-header p2-header"
+    "p2-info p2-photos"
+    "p2-footer p2-footer";
+    grid-template-columns: auto auto;
+}
+
+#page2 *{
+    font-size: 2.5rem;
+}
+
+#page2 #btns{
+    text-align: end;
+    grid-area: p2-header;
+}
+
+#page2 .p2-info{
+    grid-area: p2-info;
+}
+
+
+
+#page2 .p2-photos{
+    grid-area: p2-photos;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.placeholder{
+    text-align: center;
+    text-justify: center;
+    border-radius: 50%;
+    font-size: 3.43rem !important;
+    width: 5.45em;
+    height: 5.45em;
+    background-color: #D9D9D9;
+}
+
+.p2-footer{
+    grid-area: p2-footer;
 }
